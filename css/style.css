@@ -380,7 +380,7 @@ body{
   
   /* SERVICES */
 .services{
-    padding: 122px 0;
+    padding: 122px 0 70px;
 }
   .services-info{
       width: 940px;
@@ -516,7 +516,7 @@ body{
     margin: auto;
     margin-bottom: 120px;
 }
-.card-list{
+.news-card{
     margin: 0;
     padding: 0;
     list-style-type: none;
