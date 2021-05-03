@@ -160,9 +160,8 @@ body{
     font-size: 22px;
     line-height: 38px;
 }
-.hero-section__btn{
+.btn{
     text-decoration: none;
-    width: 262px;
     padding: 12px 34px;
     color: #fff;
     background-color: var(--accent-color);
@@ -172,10 +171,12 @@ body{
     line-height: 40px;
     display: flex;
     align-items: center;
-    margin-bottom: 107px;
-    
 }
-.hero-section__btn::after{
+.hero-section__btn{
+    width: 262px;
+    margin-bottom: 107px;
+}
+.btn::after{
     content: "";
     width: 18px;
     margin-left: 35px;
@@ -412,7 +413,7 @@ body{
     flex-wrap: wrap;
 }
 
-.card-item{
+.card{
     width: 344px;
     padding: 29px 17px 34px 31px;
     background-color: #fff;
@@ -456,13 +457,13 @@ body{
     padding: 23px;
     border-radius: 50%;
  }
- .card-item__accomodation::before{
+ .card-item__accommodation::before{
     background-image: url(../images/home.svg);
     background-color: #5C96FF;
     padding: 23px;
     border-radius: 50%;
  }
- .card-item__accomodation::before{
+ .card-item__briefing::before{
     background-image: url(../images/airplane.svg);
     background-color: #FA706C;
     padding: 23px;
@@ -504,7 +505,100 @@ body{
     margin-left: 20px;
 }
 
+/* NEWS_SECTION */
+.news{
+    background-color: #fff;
+    padding-top: 102px;
+    padding-bottom: 102px;
+}
+.news-info{
+    width: 940px;
+    margin: auto;
+    margin-bottom: 120px;
+}
+.card-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 146px;
+}
+.news-info__title{
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 37px;
+    line-height: 54px;
+    color: var(--light-black);
+    text-align: center;
+    letter-spacing: -0.4625px
+}
+.news-info__text{
+    margin: 0;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: center;
+}
+.card-news{
+    position: relative;
+    padding-top: 244px;
+}
+.card-news:not(:last-child){
+    margin-right: 46px;
+}
+.card-news::before{
+  content: "";
+  width: 344px;
+  height: 224px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
 
+.card-news__come::before{
+    background-image: url("../images/art-left.png");
+}
+.card-news__trump::before{
+    background-image: url("../images/art-woman-center.png");
+}
+.card-news__how::before{
+    background-image: url("../images/art-right.png");
+}
 
-
-  
+.card-title{
+    margin: 0;
+    margin-bottom: 28px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--dark-grey);
+}
+.time-news{
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--light-grey);
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.time-news::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-image: url("../images/calendar.png");
+    background-size: contain;
+    margin-right: 15px;
+}
+.join-btn{
+  width: 226px;
+  margin-right: auto;
+  margin-left: auto;
+}
