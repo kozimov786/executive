@@ -126,11 +126,10 @@ body{
 .site-main{
     padding-top: 140px;
 }
-.hero-section__container{
+.hero-section{
     background-image: url("../images/student-woman.png");
     background-repeat: no-repeat;
-    background-position: calc(50% + 500px) 120px;
-    background-size: contain;
+    background-position: calc(50% + 550px) 10px;
     padding-bottom: 59px;
 }
 .hero-section__info{
