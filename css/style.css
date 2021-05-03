@@ -507,7 +507,7 @@ body{
 
 /* NEWS_SECTION */
 .news{
-    background-color: #fff;
+    background-color:var(--section-bg-color);
     padding-top: 102px;
     padding-bottom: 102px;
 }
