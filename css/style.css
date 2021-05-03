@@ -1,0 +1,102 @@
+/*CUSTOM PROPERTIES*/
+:root{
+    /*Site Colors*/
+     --light-black:#373737;
+     --text-color: #7D7D7D;
+     --accent-color:#717CFF;
+     --header-bg-color: #F2F2F2;
+     --section-bg-color:#FAFAFA;
+     --darker-grey:#37474F;
+     --dark-grey:#252525;
+     --light-grey:#565656;
+}
+
+/*WEB FONTS RELATED*/
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: 
+         url('../fonts/roboto-v27-latin-500.woff2') format('woff2'), 
+         url('../fonts/roboto-v27-latin-500.woff') format('woff'); 
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+         url('../fonts/roboto-v27-latin-700.woff2') format('woff2'),
+         url('../fonts/roboto-v27-latin-700.woff') format('woff'); 
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: 
+         url('../fonts/roboto-v27-latin-900.woff2') format('woff2'), 
+         url('../fonts/roboto-v27-latin-900.woff') format('woff'); 
+  }
+
+/*GLOBAL STYLES*/
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family:"Roboto","Arial", sans-serif;
+    font-size: 16px;
+    line-height: 38px;
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
+}
+.container{
+    max-width: 1254px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* HEADER */
+.site-header{
+    padding-top: 40px;
+}
+.site-header__container{
+    display: flex;
+    align-items: center;
+}
+.sitenav-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.sitenav-link{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.sitenav-item:not(:first-child){
+    margin-left:73px;
+}
+.sitenav-item__bordered{
+    padding: 11px 35px;
+    border: 2px solid var(--accent-color);
+    border-radius: 11px;
+}
+
+
+/* LOGO */
+.logo-img{
+    display: block;
+}
+.logo-link{
+    margin-right: 175px;
+}
