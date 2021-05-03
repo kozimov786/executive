@@ -377,11 +377,132 @@ body{
     }
   }
   
+  /* SERVICES */
+.services{
+    padding: 122px 0;
+}
+  .services-info{
+      width: 940px;
+      margin: 0 auto 110px;
+  }
+  .services-info__title{
+      margin: 0;
+      margin-bottom: 25px;
+      font-weight: bold;
+      font-size: 37px;
+      text-align: center;
+      line-height: 54px;
+      letter-spacing: -0.4625px;
+      color: var(--light-black);
+  }
+  .services-info__text{
+      margin: 0;
+      text-align: center;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 38px;
+  }
+.card-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.card-item{
+    width: 344px;
+    padding: 29px 17px 34px 31px;
+    background-color: #fff;
+    box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+}
+.card-item:not(:nth-child(3)){
+    margin-right: 47px;
+}
+.card-item:not(:nth-child(4)){
+    margin-bottom: 56px;
+}
+.card-item:not(:nth-child(5)){
+    margin-bottom: 56px;
+}
+.card-item::before{
+    content: "";
+    width: 76px;
+    height: 76px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:30px 30px, contain;
+    margin-bottom: 30px;
+}
+.card-item__career::before{
+   background-image: url(../images/radar.svg);
+   background-color: var(--accent-color);
+   padding: 23px;
+   border-radius: 50%;
+}
+.card-item__admissions::before{
+    background-image: url(../images/bookmark.svg);
+    background-color: #FF5959;
+    padding: 23px;
+    border-radius: 50%;
+ }
+ .card-item__visa::before{
+    background-image: url(../images/file-checked.svg);
+    background-color: #70CE88;
+    padding: 23px;
+    border-radius: 50%;
+ }
+ .card-item__accomodation::before{
+    background-image: url(../images/home.svg);
+    background-color: #5C96FF;
+    padding: 23px;
+    border-radius: 50%;
+ }
+ .card-item__accomodation::before{
+    background-image: url(../images/airplane.svg);
+    background-color: #FA706C;
+    padding: 23px;
+    border-radius: 50%;
+ }
 
+.card-title{
+    margin: 0;
+    margin-bottom: 9px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 37px;
+    color: var(--darker-grey);
+}
+.card-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.444444px;
+}
 
-
-
+.card-link{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.439286px;
+    color: var(--accent-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.card-link::after{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-image: url("../images/arrow-right.svg");
+    background-size: contain;
+    margin-left: 20px;
+}
 
 
 
