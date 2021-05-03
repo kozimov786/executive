@@ -9,6 +9,7 @@
      --darker-grey:#37474F;
      --dark-grey:#252525;
      --light-grey:#565656;
+     --dark-black: #2F2F2F;
 }
 
 /*WEB FONTS RELATED*/
@@ -81,12 +82,32 @@ body{
 }
 .sitenav-link{
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--light-black);
+    white-space: nowrap;
+}
+.sitenav-item:not(:last-child):after{
+    content: "";
+    display: block;
+    height: 3px;
+    width:0;
+    transition:0.3s ease;
+    background-color: var(--accent-color);
+}
+.sitenav-item:hover::after{
+    width: 100%;
+    height: 3px;
+    transition: ease width 0.3s;
 }
 .sitenav-item:not(:first-child){
     margin-left:73px;
 }
-.sitenav-item__bordered{
+.sitenav-item{
+    line-height: 20px;
+    font-weight: 500;
+}
+.sitenav-link__bordered{
+    margin: 0;
+    padding: 0;
     padding: 11px 35px;
     border: 2px solid var(--accent-color);
     border-radius: 11px;
@@ -98,5 +119,76 @@ body{
     display: block;
 }
 .logo-link{
-    margin-right: 175px;
+    margin-right:auto;
+}
+
+/* MAIN */
+.site-main{
+    padding-top: 140px;
+}
+.hero-section__container{
+    background-image: url("../images/student-woman.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 500px) 120px;
+    background-size: contain;
+    padding-bottom: 59px;
+}
+.hero-section__info{
+    background-color: var(--header-bg-color);
+    width: 630px;
+    margin-right: auto;
+}
+
+.hero-section__title{
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 66px;
+    color: var(--dark-black);
+}
+.title-accent{
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 66px;
+    color: var(--accent-color);
+}
+.hero-section__text{
+    margin: 0;
+    margin-bottom: 42px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 38px;
+}
+.hero-section__btn{
+    text-decoration: none;
+    width: 262px;
+    padding: 12px 34px;
+    color: #fff;
+    background-color: var(--accent-color);
+    border-radius: 11px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 107px;
+    
+}
+.hero-section__btn::after{
+    content: "";
+    width: 18px;
+    margin-left: 35px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/arrow-right.svg");
+}
+.hero-section__links img{
+    display: block;
+    margin-right: 30px;
+}
+.hero-section__links{
+    display: flex;
+    align-items: center;
 }
