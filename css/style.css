@@ -816,3 +816,76 @@ body{
     width: 503px;
     margin-right: 35px;
   }
+
+
+  /* DREAM */
+  .dreams{
+    background-color: var(--section-bg-color);
+    padding-top: 92px;
+    padding-bottom: 85px;
+  }
+  .dream__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dream-btn{
+    width: 262px;
+  }
+  .dream-title{
+    margin: 0;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 43px;
+    color: var(--dark-grey);
+  }
+
+  /* SITEFOOTER */
+  .site-footer{
+    background-color: var(--accent-color);
+    padding-top: 64px;
+    padding-bottom: 45px;
+    color: #EEEEEE;
+  }
+  .site-footer__container{
+    display: flex;
+    align-items: center;
+  }
+  
+  address{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 26px;
+    margin-bottom: 58px;
+  }
+  .footer-logo-link img{
+    display: block;
+  }
+  .site-footer__info{
+    width: 343px;
+    margin-right: 130px;
+  }
+  .site-footer__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-right: 130px;
+  }
+  .site-footer__link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 49px;
+    color: #EEEEEE;
+    text-decoration: none;
+  }
+ .footer-links{
+   margin-top: 130px;
+ }
+  .info-copy{
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+  }
