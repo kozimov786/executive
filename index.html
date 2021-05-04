@@ -253,7 +253,7 @@
                                     
                                 </div>
 
-                                <!-- <div class="event-card">
+                                <div class="event-card">
                                 
                                     <div class="title-box">
                                         <p class="calendar">17 <span class="calendar-month">OCT</span></p>
@@ -267,7 +267,7 @@
                                         <p class="time-text"><time datetime="10:00">10:00 AM</time><time datetime="14:00">- 2:00 PM</time</p>
                                         </div>
                                         
-                                    </div> -->
+                                    </div>
                                 
                  </div>
             </div>
@@ -349,11 +349,21 @@
       
       
             </div>
-          </section>
+        </section>
+        
+        section.
+        
  </main>
 
  <script>  
     $('.testimonial__list').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      variableWidth: true
+    });
+    $('.countries-list').slick({
       dots: true,
       infinite: true,
       speed: 300,
