@@ -624,10 +624,7 @@ body{
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.06);
     border-radius: 15px;
 }
-.slick-slide {
-    width: 540px;
-    margin-right: 47px;
-  }
+
 .event-card:not(:last-child){
     margin-right: 47px;
 }
